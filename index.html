@@ -1,0 +1,314 @@
+<!-- start of index.html  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alireza Chaviwala</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <h3>&lt;Alireza Chaviwala/&gt;</h3>
+      <ul>
+        <li>
+          <a href="#welcome-section" id="profile-link" target="_blank">About</a>
+        </li>
+        <li>
+          <a href="#projects" id="profile-link" target="_blank">Projects</a>
+        </li>
+        <li><a id="profile-link" target="_blank">Resume</a></li>
+        <li>
+          <a href="#contact" id="profile-link" target="_blank">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="welcome-section">
+      <h1>Hey, I am <span id="name">Alireza Chaviwala</span></h1>
+      <p>
+        Software Engineer
+        <span id="skill-details"
+          >specializing in Full Stack Web Development</span
+        >
+      </p>
+    </section>
+    <section id="projects">
+      <h2 class="section-header">Some of my projects</h2>
+      <div class="projects-container">
+        <div class="project-tile">
+          <img
+            src="https://devopedia.org/images/article/397/9618.1642936094.png"
+            class="project-preview-image"
+          />
+          <div class="project-title"><span>URL Shortener</span></div>
+        </div>
+
+        <div class="project-tile">
+          <img
+            src="https://devopedia.org/images/article/397/9618.1642936094.png"
+            class="project-preview-image"
+          />
+          <div class="project-title"><span>WhatsApp Reminder Bot</span></div>
+        </div>
+
+        <!-- <div class="project-tile">
+          <img
+            src="https://devopedia.org/images/article/397/9618.1642936094.png"
+            class="project-preview-image"
+          />
+          <div class="project-title"><span>Qaza Salah Tracker App</span></div>
+        </div> -->
+
+        <div class="project-tile">
+          <a class="project-link" href="https://almuntazartours.netlify.app/"
+            ><img
+              src="https://devopedia.org/images/article/397/9618.1642936094.png"
+              class="project-preview-image"
+          /></a>
+          <div class="project-title">
+            <span>Al Muntazar Tours website</span>
+          </div>
+        </div>
+
+        <div class="project-tile">
+          <a class="project-link" href="https://quiz-app-ui.netlify.app/"
+            ><img
+              src="https://devopedia.org/images/article/397/9618.1642936094.png"
+              class="project-preview-image"
+          /></a>
+          <div class="project-title"><span>Quiz App</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2 class="section-header">Get in touch!</h2>
+      <div class="social-icons">
+        <a href=""> <i class="fa fa-envelope"></i>Email </a>
+        <a
+          href="https://www.linkedin.com/in/alireza-chaviwala/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in"></i>LinkedIn
+        </a>
+        <a href="https://github.com/AlirezaChaviwala" target="_blank">
+          <i class="fab fa-github"></i>GitHub
+        </a>
+        <a href=""> <i class="fa fa-phone"></i>Call </a>
+      </div>
+    </section>
+  </body>
+</html>
+
+<!-- end of index.html -->
+
+<!-- start of styles.css  -->
+
+<style>
+  :root {
+    --main-red: #be3144;
+    --main-gray: #303841;
+    --main-blue: #45567d;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 0.625rem;
+    font-family: Poppins, sans-serif;
+  }
+  nav {
+    width: 100%;
+    height: 25%;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background-color: var(--main-red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2.5rem;
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  nav ul {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav ul li {
+    list-style: none;
+  }
+  li a#profile-link {
+    font-size: 1.5rem;
+  }
+  section {
+    padding: 5rem 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  section#welcome-section {
+    height: 100vh;
+    background-color: var(--main-gray);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    color: white;
+    font-size: 6rem;
+  }
+  section#welcome-section span#name {
+    color: var(--main-red);
+  }
+  p {
+    color: white;
+    font-size: 4rem;
+  }
+  section#welcome-section span#skill-details {
+    color: var(--main-red);
+    font-size: 3rem;
+  }
+  section#projects {
+    height: min-content;
+    background-color: var(--main-blue);
+  }
+  h2.section-header {
+    margin-top: 5rem;
+    font-size: 4rem;
+    color: white;
+    text-decoration: underline;
+  }
+  .projects-container {
+    width: 90%;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .project-tile {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    height: 30rem;
+    margin: 2.5rem;
+    transition: transform 0.5s ease-in-out 0ms;
+  }
+  .project-tile:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  a.project-link {
+    height: 80%;
+    width: 100%;
+  }
+  .project-preview-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: white;
+  }
+  .project-title {
+    background-color: var(--main-gray);
+    color: white;
+    width: 100%;
+    height: 20%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section#contact {
+    height: max-content;
+    background-color: var(--main-gray);
+  }
+  div.social-icons {
+    width: 60%;
+    margin: 5rem auto;
+    display: grid;
+    font-size: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    align-items: center;
+  }
+  div.social-icons a i {
+    display: block;
+  }
+  @media only screen and (max-width: 600px) {
+    div.projects-container {
+      grid-template-columns: 1fr;
+    }
+    div.social-icons {
+      font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    div.social-icons a i {
+      display: inline;
+      margin-right: 1rem;
+    }
+    nav,
+    nav ul {
+      flex-direction: column;
+      justify-content: center;
+    }
+    nav ul li {
+      border-bottom: 1px solid black;
+      text-align: center;
+      margin: 5px auto;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 2.5rem;
+    }
+    section#welcome-section span#skill-details {
+      color: var(--main-red);
+      font-size: 2.5rem;
+    }
+    h2.section-header {
+      margin-top: 40%;
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    .project-tile {
+      width: 90%;
+      height: 75%;
+    }
+    .a.project-link {
+      height: 65%;
+    }
+    .project-title {
+      height: 35%;
+      font-size: 1.7rem;
+    }
+  }
+</style>
+
+<!-- end of styles.css -->
